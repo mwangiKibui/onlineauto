@@ -1,0 +1,30 @@
+@import '../../../variables';
+@import '../../../functions';
+
+.signup-section{
+    width: 100%;
+    margin: 20px 0px;
+};
+
+.signup-form-container{
+    width: 100%;
+    position: relative;
+};
+
+.signup-form-container-content{
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid $gray-color;
+    border-radius: 10px;
+};
+
+@media(max-width:breakpoint(md-end)){
+    .signup-form-container-content{
+        width: 100%;
+        margin: 10px 0px;
+        padding: 20px;
+        border: 1px solid $gray-color;
+        border-radius: 10px;
+    };
+}

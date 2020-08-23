@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+
+$font:'Tenali Ramakrishna', sans-serif;
+
+$highlight-color:coral;
+$gray-color:#aaa;
+$white-color:#fff;
+$black-color:black;
+
+//breakpoints
+$breakpoints: (
+      xs-start: 0px,
+      xs-end:   575px,
+      sm-start: 576px,
+      sm-end:   767px,
+      md-start: 768px,
+      md-end:   991px,
+      lg-start: 992px,
+      lg-end:   1199px,
+      xl-start: 1200px
+   );

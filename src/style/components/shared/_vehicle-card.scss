@@ -1,0 +1,45 @@
+@import '../../variables';
+
+//the vehicle section
+.vehicles-section{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.vehicle-card{
+    width: 100%;
+    margin: 5px 0px;
+};
+
+.vehicle-card-root{
+    display: flex !important;
+};
+
+.vehicle-card-media{
+    width: 60%;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+};
+.vehicle-card-img-preloader{
+    width: 100%;
+    height: 150px;
+    background: $gray-color;
+};
+.vehicle-card-img{
+    width: 100%;
+    height: 150px;
+};
+
+.vehicle-card-details{
+    flex: 1 0 auto;
+    flex-direction: column;
+    width: 40%;
+};
+
+.vehicle-card-name{
+    text-decoration:none;
+    &:hover{
+        text-decoration:none;
+    }
+}

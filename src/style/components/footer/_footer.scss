@@ -1,0 +1,29 @@
+@import '../../variables';
+
+.footer{
+    width: 100%;
+};
+
+.footer-links-container{
+    width:100%;
+    text-align: center;
+};
+
+.footer-links-ul{
+    display: inline-flex;
+    justify-content: space-between;
+    list-style-type: none;
+};
+
+.footer-links-item{
+    margin-right: 10px;
+};
+
+.footer-links-icon{
+    text-decoration: none;
+    color: $gray-color;
+    &:hover{
+        text-decoration: none;
+        color: $highlight-color;
+    }
+}

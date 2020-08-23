@@ -1,0 +1,32 @@
+@import '../../../../variables';
+
+.user-profile-pic-container{
+    width: 100%;
+};
+
+.user-profile-img-preloader{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 5px auto;
+    background: $gray-color;
+};
+
+.user-profile-img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 5px auto;
+};
+
+//The form
+
+.user-profile-form{
+    width: 80%;
+    margin: 5px auto;
+}
+
+.profile-img-label{
+    margin: 5px 0px;
+    cursor: pointer;
+}

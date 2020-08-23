@@ -1,0 +1,27 @@
+
+
+@import './generals';
+@import './components/header/navbar';
+
+@import './components/layout';
+@import './components/blocks/block-home';
+
+@import './components/footer/footer';
+@import './components/shared/vehicle-card';
+
+@import './components/pages/aboutus';
+@import './components/shared/vehicle-gallery';
+
+@import './components/shared/vehicle-card-name';
+@import './components/shared/vehicle-card-payment';
+
+@import './components/shared/vehicle-card-description';
+@import './components/pages/auth/login';
+
+@import './components/pages/auth/signup';
+@import './components/pages/auth/dashboard/dashboard';
+
+@import './components/pages/auth/dashboard/orders';
+@import './components/pages/auth/dashboard/profile';
+
+@import './components/shared/order-card';

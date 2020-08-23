@@ -1,0 +1,30 @@
+@import '../../../../variables';
+
+.user-dashboard{
+    width: 100%;
+    margin-top: 30px;
+};
+
+.dashboard-profile-links-ul{
+    width: 80%;
+    margin: 10px auto;
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid $gray-color;
+};
+
+.dashboard-profile-link a{
+    color: $black-color;
+
+    &:hover{
+        text-decoration:none;
+    }
+};
+
+.dashboard-profile-link-active a{
+    color: $highlight-color;
+
+    &:hover{
+        text-decoration:none;
+    }
+};

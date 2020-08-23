@@ -1,0 +1,10 @@
+export const LOADING = "LOADING";
+export const ERROR = "ERROR";
+export const TOKEN = "TOKEN";
+export const MESSAGE = "MESSAGE";
+export const USER = "USER";
+export const LOGOUT = "LOGOUT";
+export const UPDATE_PROFILE = "UPDATE_PROFILE";
+export const UPDATE_PROFILE_DETAILS = "UPDATE_PROFILE_DETAILS";
+export const ORDERS = "ORDERS";
+export const ADD_ORDER = "ADD_ORDER";

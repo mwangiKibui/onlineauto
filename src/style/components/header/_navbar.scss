@@ -1,0 +1,11 @@
+@import '../../variables';
+
+.navbar-logo-img{
+    width: 100px;
+    height: 60px;
+};
+
+.navbar-link-active{
+    padding-bottom: 3px;
+    border-bottom:1px solid $highlight-color;
+}

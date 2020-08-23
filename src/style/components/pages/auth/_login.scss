@@ -1,0 +1,32 @@
+@import '../../../variables';
+@import '../../../functions';
+
+.section-login{
+    width: 100%;
+    margin: 30px 0px !important;
+};
+
+.login-form-container{
+    position: relative;
+    width: 100%;
+};
+
+.login-form-container-content{
+    width: 50%;
+    margin: 10px auto;
+    top: 45%;
+    border: 1px solid $gray-color;
+    padding: 20px;
+    border-radius: 10px;
+};
+
+@media(max-width:breakpoint(md-end)){
+    .login-form-container-content{
+        width: 100%;
+        margin: 10px 0px;
+        top: 45%;
+        border: 1px solid $gray-color;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
