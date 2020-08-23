@@ -15,7 +15,7 @@ const client = {
     production:'AZ_O9w1lgQeKQn06xYVvRtKE3wIgKKwAv22fuCzOvG4NFTHp9f8rpzYuVQrtbGL3taUYc3icLxAfw42Z'
 };
 
-const client_ID = process.env.NODE_ENV === "production" ? client.production : client.sandbox;
+const client_ID = process.env.NODE_ENV === "production" ? client.sandbox : client.sandbox;
 let PaypalButton = null;
 
 class PayPalButton extends Component {
