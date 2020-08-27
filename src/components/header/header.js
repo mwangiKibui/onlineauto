@@ -13,14 +13,12 @@ const Header = () => {
     
 
     return (
-        <Navbar light color="light" fixed="top" expand="md">
+        <Navbar dark color="dark" expand="md" >
+
             <NavbarBrand href="/">
-                <img 
-                src="/images/logo.webp"
-                className="navbar-logo-img"
-                alt=""
-                />
+                Online auto
             </NavbarBrand>
+           
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
 
@@ -70,41 +68,9 @@ const Header = () => {
                                     Dashboard
                                 </NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink className={
-                                    classNames('navbar-link',{
-                                        'navbar-link-active':window.location.pathname.includes('/auth/logout')
-                                    })
-                                } href="/auth/logout">
-                                    Logout
-                                </NavLink>
-                            </NavItem>
                             </>
-                        ) : (
-                            <>
-                            <NavItem>
-                                <NavLink className={
-                                    classNames('navbar-link',{
-                                        'navbar-link-active':window.location.pathname.includes('/auth/login')
-                                    })
-                                } href="/auth/login">
-                                    Login
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink className={
-                                    classNames('navbar-link',{
-                                        'navbar-link-active':window.location.pathname.includes('/auth/signup')
-                                    })
-                                }
-                                href="/auth/signup">
-                                    Signup
-                                </NavLink>
-                            </NavItem>
-                            </>
-                        )
-                    }
-                    
+                        ) : null
+                    }                    
                 </Nav>
             </Collapse>
         </Navbar>

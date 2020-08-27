@@ -42,7 +42,6 @@ class Vehicle extends Component {
         const {loading,related} = this.state;
         return (
             <section className="vehicle-page">
-                <div className="container">
                 <div className="row">
                     {
                         loading ? (
@@ -77,7 +76,6 @@ class Vehicle extends Component {
                             </>
                         )
                     }
-                </div>
                 </div>
             </section>
         )

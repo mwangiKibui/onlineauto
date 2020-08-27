@@ -4,6 +4,7 @@ import React from 'react';
 import {Switch,Route} from 'react-router-dom';
 //components
 import Navbar from './header/header';
+import Banner from './header/Banner';
 import Footer from './footer/footer';
 
 //page components
@@ -21,6 +22,7 @@ const Layout = () => {
     return (
         <section className="layout">
             <div className="app_header">
+                <Banner />
                 <Navbar />
             </div>
             <div className="app_body">

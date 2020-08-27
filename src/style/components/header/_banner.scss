@@ -1,0 +1,37 @@
+@import '../../variables';
+
+.banner-section{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin:0px;
+    height: 150px;
+    padding:10px;
+};
+
+.banner-section-img{
+   width: 130px;
+   height: 130px;
+};
+
+.banner-section-icon-container{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 17px;
+    border: 1px solid $gray-color;
+    margin-right: 10px;
+    cursor: pointer;
+};
+
+.banner-section-icon{
+    color: $gray-color;
+};
+
+.banner-section-heading{
+    font-weight: bold;
+};
+
+.banner-section-card{
+    padding-top: 10px;
+}

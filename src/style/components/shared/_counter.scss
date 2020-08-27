@@ -1,0 +1,57 @@
+@import '../../variables';
+
+.counter{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+};
+
+.counter-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,.8);
+};
+
+.counter-overlay-content{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+};
+
+.counter-text{
+    color: $white-color;
+};
+
+.counter-card{
+    margin: 5px auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: $danger-color;
+};
+
+.counter-card-content{
+    padding:12px;
+    text-align: center;
+}
+
+.counter-card-icon{
+    color: $white-color;
+    font-size: 20px;
+    margin-bottom: 10px;
+};
+
+.counter-card-heading{
+    color: $white-color;
+    font-weight: bold;
+};
+
+.counter-card-text{
+    color: $white-color;
+}

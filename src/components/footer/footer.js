@@ -1,44 +1,27 @@
 import React from 'react';
 
 //third-party
-import {Facebook,Instagram,Twitter,YouTube} from '@material-ui/icons';
+
+//components
+import Copyright from './Copyright';
+import Links from './Links';
 
 
 const Footer = () => {
     return (
         <footer className="footer">
-            <hr />
-            <div className="footer-links-container">
-
-            <ul className="footer-links-ul">
-
-                <li className="footer-links-item">
-                    <a href="www.facebook.com">
-                        <Facebook className="footer-links-icon" />
-                    </a>
-                </li>
-
-                <li className="footer-links-item">
-                    <a href="www.instagram.com">
-                        <Instagram className="footer-links-icon" />
-                    </a>
-                </li>
-
-                <li className="footer-links-item">
-                    <a href="www.twitter.com">
-                        <Twitter className="footer-links-icon" />
-                    </a>
-                </li>
-
-                <li className="footer-links-item">
-                    <a href="www.youtube.com">
-                        <YouTube className="footer-links-icon" />
-                    </a>
-                </li>
-
-            </ul>
-
+            
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 col-sm-6 col-md-6 text-center">
+                        <Copyright />
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-6 text-center">
+                        <Links />
+                    </div>
+                </div>
             </div>
+            
         </footer>
     )
 };

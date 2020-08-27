@@ -2,7 +2,19 @@
 
 .footer{
     width: 100%;
+    border-top: 1px solid $gray-color;
+    padding: 20px;
+    height: 100px;
+    background: $black-color;
 };
+
+.copyright-section-text{
+    width: 100%;
+    text-align: center;
+    color: $white-color;
+    padding-top: 10px;
+    font-size: 18px;
+}
 
 .footer-links-container{
     width:100%;

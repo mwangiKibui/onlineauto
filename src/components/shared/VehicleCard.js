@@ -1,8 +1,9 @@
 import React,{useState} from 'react';
 
 //third-party
-import {Card,CardContent,CardMedia} from '@material-ui/core';
 import {Link} from 'react-router-dom';
+import {AiFillCar} from 'react-icons/ai';
+import {BsFillPersonFill} from 'react-icons/bs';
 
 const VehicleCard = ({vehicle}) => {
 
@@ -10,28 +11,46 @@ const VehicleCard = ({vehicle}) => {
 
     return (
         <div className="vehicle-card">
-            <Card className="vehicle-card-root">
-                <CardMedia className="vehicle-card-media">
+            <div className="card">
+                <div className="vehicle-card-img-section">
+
+                    <Link to={`/showroom/${vehicle['slug']}`}>
                     <div className="vehicle-card-img-preloader" style={{display:loaded ? 'none' : 'block'}} />
+                    </Link>
+                    
+                    <Link to={`/showroom/${vehicle['slug']}`}>
                     <img
                     onLoad={() => setLoaded(true)}
                     style={{display:loaded ? 'block' : 'none'}}
-                    className="vehicle-card-img"
-                    src={vehicle['profiles'][0]}
+                    className="card-img-top vehicle-card-img"
+                    src={vehicle['images'][0]}
                     alt=""
                     />
-                </CardMedia>
-                <div className="vehicle-card-details">
-                    <CardContent className="vehicle-card-content">
+                    </Link>
+                    
 
-                        <Link to={`/showroom/${vehicle['slug']}`} className="vehicle-card-name">
-                            {vehicle['name']}
-                        </Link>
-                        <p className="vehicle-card-price">{parseFloat(`${vehicle['price']}`)} USD</p>
+                    <div className="vehicle-card-img-overlay">
 
-                    </CardContent>
+                        <div className="vehicle-card-img-overlay-content">
+
+                            <span className="vehicle-card-img-overlay-content-data"><AiFillCar className="vehicle-card-img-overlay-icon" /> {vehicle['fuel']} </span>
+                            <span className="vehicle-card-img-overlay-content-data"><BsFillPersonFill className="vehicle-card-img-overlay-icon"/>{vehicle['number_of_seats']}</span>
+                            
+                        </div>
+                        
+                    </div>
+
+
                 </div>
-            </Card>
+                <div className="card-body">
+
+                    <Link to={`/showroom/${vehicle['slug']}`} className="vehicle-card-name">
+                        {vehicle['name']}
+                    </Link>
+                    <p className="vehicle-card-price">KSHS {parseInt(`${vehicle['price']}`).toLocaleString()}</p>
+
+                </div>
+            </div>
         </div>
     )
 };

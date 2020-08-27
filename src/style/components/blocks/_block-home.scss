@@ -3,10 +3,11 @@
 
 .block-home{
     width: 100%;
-    height: 250px;
+    height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 20px;
 };
 
 .block-home-overlay{
@@ -25,29 +26,10 @@
     top: 40%;
 };
 
-.block-home-content-form{
-    width: 40%;
-    margin: 0px auto;
-};
-
-.block-home-content-form-input input[type="text"]{
-    background: transparent;
+.block-home-content-heading{
     color: $white-color;
-};
-
-.search-form::placeholder{
-    color: $white-color !important;
-    font-size:18px;
-};
-
-.input-group-text{
-    background: transparent !important;
-};
-
-.input-group-icon{
-    color: $white-color;
-    cursor: pointer;
-};
+    font-size: 27px;
+}
 
 @media(max-width:breakpoint(md-end)){
     .block-home{
