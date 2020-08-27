@@ -14,8 +14,8 @@ const VehicleGallery = () => {
         arrows:false,
         infinite:true,
         speed:500,
-        slidesToShow:vehicle['profiles'].length,
-        slidesToScroll:vehicle['profiles'].length
+        slidesToShow:vehicle['images'].length,
+        slidesToScroll:vehicle['images'].length
     }
 
     return (
@@ -27,7 +27,7 @@ const VehicleGallery = () => {
         <img
         onLoad={() => setLoaded(true)}
         style={{display:loaded ? 'block' : 'none'}}
-        src={vehicle['profiles'][0]}
+        src={vehicle['images'][0]}
         className="vehicle-gallery-img"
         alt="loading"
         />
@@ -38,7 +38,7 @@ const VehicleGallery = () => {
         <div className="vehicle-gallery-slideshow">
             <Slider {...settings}>
                 {
-                    vehicle['profiles'].map((vehicle,index) => (
+                    vehicle['images'].map((vehicle,index) => (
                         <img 
                         src={vehicle}
                         key={index}

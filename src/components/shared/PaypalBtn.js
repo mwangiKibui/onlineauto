@@ -5,6 +5,10 @@ import propTypes from 'prop-types';
 import PaypalExpressBtn from './PaypalExpressCheckout';
 
 export default class PaypalBtn extends React.Component {
+    convertTotal = money => {
+        let result = money / 10000;
+        return result;
+    };
     render(){
         const onSuccess = payment => {
             console.log(`your payment succeeded`,payment);
@@ -17,9 +21,8 @@ export default class PaypalBtn extends React.Component {
             //error loading the paypal script
             console.log(`error loading the paypal script`);
         };
-
         let currency = 'USD';
-        let total = parseInt(this.props.vehicle['price']);
+        let total = parseInt(this.convertTotal(this.props.vehicle['price']));
         let vehicle = this.props.vehicle;
         return (
             <PaypalExpressBtn

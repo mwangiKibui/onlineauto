@@ -21,7 +21,9 @@ class Vehicles extends Component{
     };
     componentDidUpdate(prevProps){
         if(this.props.vehicles !== prevProps.vehicles){
-            this.setState({vehicles:this.props.vehicles.slice(0,4)})
+            this.setState({
+                vehicles:this.props.home ? this.props.vehicles.slice(0,4) : this.props.vehicles
+            })
         }
     };
     render(){

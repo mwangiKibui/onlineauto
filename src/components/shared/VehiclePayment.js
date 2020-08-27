@@ -11,7 +11,7 @@ const VehiclePayment = () => {
         <Card className="vehicle-card-payment">
             <CardContent>
                 <p className="vehicle-card-payment-amount">
-                    USD {parseFloat(vehicle['price'])}
+                    KSHS {parseInt(vehicle['price']).toLocaleString()}
                 </p>
                 <PaypalBtn vehicle={vehicle} />
             </CardContent>

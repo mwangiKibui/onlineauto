@@ -61,7 +61,7 @@
 
 .app_body {
   width: 100%;
-  min-height: 50vh;
+  min-height: 60.3vh;
 }
 
 .block-home {
@@ -305,6 +305,7 @@
 
 .vehicle-description-card-heading {
   font-size: 17px;
+  font-weight: bold;
 }
 
 .description-card-description {

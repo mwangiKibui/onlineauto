@@ -18,7 +18,7 @@ export default ({order}) => {
                     <img 
                     style={{display:loaded ? 'block' : 'none'}}
                     onLoad={() => setLoaded(true)}
-                    src={order.vehicle.profiles[0]}
+                    src={order.vehicle.images[0]}
                     className="order-card-img"
                     alt=""
                     />

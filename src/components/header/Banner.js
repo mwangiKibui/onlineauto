@@ -3,8 +3,10 @@ import React from 'react';
 //third-party
 import {Mail,Call} from '@material-ui/icons';
 import {Link} from 'react-router-dom';
+import {useSelector} from 'react-redux';
 
 const Banner = () => {
+    const {token} = useSelector(state => state.users)
     return (
         <section className="banner-section">
             <div className="d-none d-sm-block d-md-block">
@@ -55,11 +57,17 @@ const Banner = () => {
                         <div className="banner-section-link">
 
                             {/** we shall make this dynamic later */}
-
-                            <Link to="/auth/login" className="btn btn-danger">
-                                Login / Register
-                            </Link>
-
+                            {
+                                !token ? (
+                                    <Link to="/auth/login" className="btn btn-danger">
+                                        Login / Register
+                                    </Link>
+                                ) : (
+                                    <Link to="/auth/logout" className="btn btn-danger">
+                                        Logout
+                                    </Link>
+                                )
+                            }
                         </div>
 
                     </div>
