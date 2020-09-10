@@ -4,6 +4,9 @@ import React,{useState} from 'react';
 import Slider from 'react-slick';
 import {useSelector} from 'react-redux';
 
+//components
+import url from '../../utils/url';
+
 const VehicleGallery = () => {
 
     const {vehicle} = useSelector(state => state.vehicles);
@@ -27,7 +30,7 @@ const VehicleGallery = () => {
         <img
         onLoad={() => setLoaded(true)}
         style={{display:loaded ? 'block' : 'none'}}
-        src={vehicle['images'][0]}
+        src={`${url}${vehicle['images'][0]}`}
         className="vehicle-gallery-img"
         alt="loading"
         />
@@ -40,7 +43,7 @@ const VehicleGallery = () => {
                 {
                     vehicle['images'].map((vehicle,index) => (
                         <img 
-                        src={vehicle}
+                        src={`${url}${vehicle}`}
                         key={index}
                         className="vehicle-gallery-slideshow-image"
                         alt="Loading..."

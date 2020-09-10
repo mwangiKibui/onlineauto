@@ -4,6 +4,9 @@ import React,{useState} from 'react';
 import {Card,CardContent,CardMedia} from '@material-ui/core';
 import {Info} from '@material-ui/icons';
 
+//components
+import url from '../../utils/url'
+
 export default ({order}) => {
 
     const [loaded,setLoaded] = useState(false);
@@ -18,7 +21,7 @@ export default ({order}) => {
                     <img 
                     style={{display:loaded ? 'block' : 'none'}}
                     onLoad={() => setLoaded(true)}
-                    src={order.vehicle.images[0]}
+                    src={`${url}${order.vehicle.images[0]}`}
                     className="order-card-img"
                     alt=""
                     />
@@ -34,6 +37,9 @@ export default ({order}) => {
                             <Info className="text-success" />{" "}{" "}
                             Fully paid
                         </p>
+                        <a href={`${url}${order.invoice}`} className="btn btn-success">
+                            view invoice
+                        </a>
                     </CardContent>
                 </div>
 

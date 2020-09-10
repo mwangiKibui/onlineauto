@@ -5,6 +5,9 @@ import {Link} from 'react-router-dom';
 import {AiFillCar} from 'react-icons/ai';
 import {BsFillPersonFill} from 'react-icons/bs';
 
+//components
+import url from '../../utils/url';
+
 const VehicleCard = ({vehicle}) => {
 
     const [loaded,setLoaded] = useState(false);
@@ -23,7 +26,7 @@ const VehicleCard = ({vehicle}) => {
                     onLoad={() => setLoaded(true)}
                     style={{display:loaded ? 'block' : 'none'}}
                     className="card-img-top vehicle-card-img"
-                    src={vehicle['images'][0]}
+                    src={`${url}${vehicle['images'][0]}`}
                     alt=""
                     />
                     </Link>

@@ -11,11 +11,10 @@ import {Redirect} from 'react-router-dom';
 import {decode,addOrder} from '../../store/users';
 
 const client = {
-    sandbox:'AeLhmV_i7tQs1bkXKhbGQ42oJMpZnEzP_AH9RhMMFmj2NYCfTbOriFjttjxXgwspSlNTkfm9v3JpDmwl',
-    production:'AZ_O9w1lgQeKQn06xYVvRtKE3wIgKKwAv22fuCzOvG4NFTHp9f8rpzYuVQrtbGL3taUYc3icLxAfw42Z'
+    sandbox:'AeLhmV_i7tQs1bkXKhbGQ42oJMpZnEzP_AH9RhMMFmj2NYCfTbOriFjttjxXgwspSlNTkfm9v3JpDmwl'
 };
 
-const client_ID = process.env.NODE_ENV === "production" ? client.sandbox : client.sandbox;
+const client_ID = client.sandbox;
 let PaypalButton = null;
 
 class PayPalButton extends Component {
